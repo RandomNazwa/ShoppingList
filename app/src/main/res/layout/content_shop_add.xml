@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ShopAddActivity"
+    tools:showIn="@layout/activity_shop_add">
+
+    <EditText
+        android:id="@+id/add_shop_name"
+        android:hint="@string/shopName"
+        android:inputType="textAutoCorrect"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/add_description"
+        android:hint="@string/description"
+        android:inputType="textAutoCorrect"
+        app:layout_constraintTop_toBottomOf="@id/add_shop_name"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/add_radius"
+        android:hint="@string/radius"
+        android:inputType="textAutoCorrect"
+        app:layout_constraintTop_toBottomOf="@id/add_description"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:importantForAutofill="no"/>
+
+    <EditText
+        android:id="@+id/add_latitude"
+        android:hint="@string/latitude"
+        android:inputType="textAutoCorrect"
+        app:layout_constraintTop_toBottomOf="@id/add_radius"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:importantForAutofill="no"/>
+
+    <EditText
+        android:id="@+id/add_longitude"
+        android:hint="@string/longitude"
+        android:inputType="textAutoCorrect"
+        app:layout_constraintTop_toBottomOf="@id/add_latitude"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:importantForAutofill="no"/>
+
+
+
+
+    <Button
+        android:id="@+id/addBtn"
+        android:text="@string/addBtn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+
+    </android.support.constraint.ConstraintLayout>
